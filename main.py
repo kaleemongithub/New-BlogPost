@@ -30,7 +30,6 @@ login_manager.init_app(app)
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-
 ##CONFIGURE TABLE
 class User(UserMixin, db.Model):
     __tablename__ = "users"
